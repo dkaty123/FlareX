@@ -18,10 +18,14 @@ contract DeployScript is Script {
         feedIndexesStr = vm.replace(feedIndexesStr, "[", "");
         feedIndexesStr = vm.replace(feedIndexesStr, "]", "");
         string[] memory indexStrings = vm.split(feedIndexesStr, ",");
+
+         uint256[] memory feedIndexes = new uint256[](indexStrings.length);
+        for (uint i = 0; i < indexStrings.length; i++) {
+            feedIndexes[i] = vm.parseUint(indexStrings[i]);
+        }
         
        
-        
-
+    
         vm.startBroadcast(deployerPrivateKey);
         
         FtsoV2FeedConsumer flareFeeds = new FtsoV2FeedConsumer(
