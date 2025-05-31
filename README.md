@@ -18,32 +18,32 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 ## 🌟 Features & Protocols Integrated
 
 ### 1. FTSO (Flare Time Series Oracle) Integration
+
+![image](https://github.com/user-attachments/assets/f9222bdf-3572-4584-a32a-e28a5edb8caa)
+
 - **Real-time Price Feeds**: Live cryptocurrency price data from FTSOv2
 - **Interactive Charts**: Dynamic price visualization with 30-second updates
 - **Multi-Asset Support**: FLR, ETH, BTC, XRP, ADA, DOT price feeds
-- **Demo Mode**: Works without wallet connection for accessibility
 
 ### 2. FAssets Protocol Integration
+
+![image](https://github.com/user-attachments/assets/d604de31-6e89-4436-b12d-0262566f22b3)
+
 - **Synthetic Asset Trading**: FXRP, FBTC, FLTC trading platform
 - **Mint & Redeem**: Full lifecycle management of synthetic assets
 - **Asset Swapping**: Instant cross-asset swaps within the ecosystem
-- **Yield Opportunities**: Staking and liquidity mining with competitive APYs
-- **Collateral Management**: Real-time collateral ratio monitoring
 
 ### 3. Secure Random Number Generator
+
+![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99)
+
 - **Provably Fair Gaming**: Dice rolling and lottery systems using Flare's secure RNG
 - **Real-time Updates**: Random numbers generated every 90 seconds by ~100 data providers
 - **Security Monitoring**: Built-in manipulation detection with security flags
-- **Zero Gas Cost**: Free access to secure randomness on Flare
-- **Multiple Use Cases**: Gaming, lotteries, fair selection mechanisms
-- **Auto-refresh**: Optional automatic updates with countdown timer
 
-### 4. LayerZero Cross-Chain Bridge
-- **Omnichain Interoperability**: Seamless asset transfers across multiple blockchains
-- **Price Feed Distribution**: Send FTSOv2 data to other chains
-- **Security First**: Ultra-light node architecture for maximum security
-- **Multiple Chain Support**: Ethereum, Polygon, Avalanche, BNB Chain, Arbitrum
-
+### 4. FDC 
+- **Weather APIs**: Data connection through Flare FDC
+  
 ## 🌍 Real-World Problem Solving
 
 ### Problem 1: Cross-Chain Liquidity Fragmentation
