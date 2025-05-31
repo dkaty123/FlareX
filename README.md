@@ -19,8 +19,9 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 
 ### 1. FTSO (Flare Time Series Oracle) Integration
 
-| ![image](https://github.com/user-attachments/assets/f9222bdf-3572-4584-a32a-e28a5edb8caa)| ![image](https://github.com/user-attachments/assets/169ede2d-d19c-478b-a688-eae3744de65d) |
-|------------------------|------------------------|
+![image](https://github.com/user-attachments/assets/f9222bdf-3572-4584-a32a-e28a5edb8caa)
+![image](https://github.com/user-attachments/assets/169ede2d-d19c-478b-a688-eae3744de65d) 
+
 
 - **Real-time Price Feeds**: Live cryptocurrency price data from FTSOv2
 - **Interactive Charts**: Dynamic price visualization with 30-second updates
