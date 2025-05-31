@@ -19,3 +19,25 @@ contract CLCounterHook is CLBaseHook {
     mapping(PoolId => uint256 count) public afterSwapCount;
 
     constructor(ICLPoolManager _poolManager) CLBaseHook(_poolManager) {}
+
+
+    function getHooksRegistrationBitmap() external pure override returns (uint16) {
+        return _hooksRegistrationBitmapFrom(
+            Permissions({
+                beforeInitialize: false,
+                afterInitialize: false,
+                beforeAddLiquidity: true,
+                afterAddLiquidity: true,
+                beforeRemoveLiquidity: false,
+                afterRemoveLiquidity: false,
+                beforeSwap: true,
+                afterSwap: true,
+                beforeDonate: false,
+                afterDonate: false,
+                beforeSwapReturnsDelta: false,
+                afterSwapReturnsDelta: false,
+                afterAddLiquidityReturnsDelta: false,
+                afterRemoveLiquidityReturnsDelta: false
+            })
+        );
+    }
