@@ -82,12 +82,6 @@ abstract contract CLBaseHook is ICLHooks {
         _;
     }
 
-    /// @dev Only pools with hooks set to this contract may call this function
-    modifier onlyValidPools(IHooks hooks) {
-        if (address(hooks) != address(this)) revert InvalidPool();
-        _;
-    }
-
     /// @dev Helper function when the hook needs to get a lock from the vault. See
     ///      https://github.com/pancakeswap/pancake-v4-hooks oh hooks which perform vault.lock()
     function lockAcquired(bytes calldata data) external virtual vaultOnly returns (bytes memory) {
