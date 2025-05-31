@@ -120,30 +120,7 @@ const RealWorldApps = () => {
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="yield" className="mt-8">
-              <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
-                <YieldAggregator />
-              </ErrorBoundary>
-            </TabsContent>
-
-            <TabsContent value="vault" className="mt-8">
-              <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
-                <MultiAssetYieldVault />
-              </ErrorBoundary>
-            </TabsContent>
-
-            <TabsContent value="fxrp-strategies" className="mt-8">
-              <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
-                <FXRPYieldStrategies />
-              </ErrorBoundary>
-            </TabsContent>
-
-            <TabsContent value="rng-games" className="mt-8">
-              <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
-                <RNGMiniGames />
-              </ErrorBoundary>
-            </TabsContent>
-
+            
             <TabsContent value="earth-data" className="mt-8">
               <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
                 <RealWorldDataRewards />
