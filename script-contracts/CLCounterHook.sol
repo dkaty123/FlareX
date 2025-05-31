@@ -41,3 +41,47 @@ contract CLCounterHook is CLBaseHook {
             })
         );
     }
+
+
+    function beforeAddLiquidity(
+        address,
+        PoolKey calldata key,
+        ICLPoolManager.ModifyLiquidityParams calldata,
+        bytes calldata
+    ) external override poolManagerOnly returns (bytes4) {
+        beforeAddLiquidityCount[key.toId()]++;
+        return this.beforeAddLiquidity.selector;
+    }
+
+    function afterAddLiquidity(
+        address,
+        PoolKey calldata key,
+        ICLPoolManager.ModifyLiquidityParams calldata,
+        BalanceDelta,
+        bytes calldata
+    ) external override poolManagerOnly returns (bytes4, BalanceDelta) {
+        afterAddLiquidityCount[key.toId()]++;
+        return (this.afterAddLiquidity.selector, BalanceDeltaLibrary.ZERO_DELTA);
+    }
+
+    function beforeSwap(address, PoolKey calldata key, ICLPoolManager.SwapParams calldata, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4, BeforeSwapDelta, uint24)
+    {
+        beforeSwapCount[key.toId()]++;
+        return (this.beforeSwap.selector, BeforeSwapDeltaLibrary.ZERO_DELTA, 0);
+    }
+
+    function afterSwap(address, PoolKey calldata key, ICLPoolManager.SwapParams calldata, BalanceDelta, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4, int128)
+    {
+        afterSwapCount[key.toId()]++;
+        return (this.afterSwap.selector, 0);
+    }
+}
+
