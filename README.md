@@ -2,11 +2,12 @@
 # FlareSync - Complete DeFi Ecosystem on Flare Network
 
  ## 🤯 The Problem
-DeFi is powerful—but also painful.
-From poor documentation and inconsistent standards to fragmented liquidity and complex protocol interactions, navigating the decentralized finance space often feels like stitching together a dozen broken APIs. Developers are left reverse-engineering outdated codebases, and users are overwhelmed by poor UX and unclear mechanics.
 
 Documentation sucks. Integration sucks. Liquidity is scattered.
-FlareSync fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols.
+
+Flare has some really powerfull tools like FTSO or Secure Random Numbers, but implementing these and reading through confusion documentation can make it super hard! Developers are left reverse-engineering outdated codebases, and users are overwhelmed by poor UX and unclear mechanics.
+
+FlareSync fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols. This platform is a way for Developers to test and undestand how cool protocols like FTSO, FDC, Randon Numbers and FAssets are!
 
 ## 🚀 Project Overview
 
