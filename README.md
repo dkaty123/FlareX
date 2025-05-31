@@ -13,6 +13,8 @@ FlareSync fixes all of that—with simplicity, clarity, and power, all built on 
 
 FlareSync is a comprehensive decentralized finance platform built on Flare Network, showcasing the power of Flare's enshrined data protocols. This platform integrates multiple Flare protocols to create a world-changing DeFi ecosystem that addresses real-world liquidity and cross-chain interoperability challenges.
 
+![image](https://github.com/user-attachments/assets/169ede2d-d19c-478b-a688-eae3744de65d)
+
 ## 🌟 Features & Protocols Integrated
 
 ### 1. FTSO (Flare Time Series Oracle) Integration
