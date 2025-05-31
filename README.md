@@ -1,5 +1,5 @@
 
-# FlareSync - Complete DeFi Ecosystem on Flare Network
+# FlareX - Complete DeFi Ecosystem on Flare Network
 
  ## 🤯 The Problem
 
@@ -7,11 +7,11 @@ Documentation sucks. Integration sucks. Liquidity is scattered.
 
 Flare has some really powerfull tools like FTSO or Secure Random Numbers, but implementing these and reading through confusion documentation can make it super hard! Developers are left reverse-engineering outdated codebases, and users are overwhelmed by poor UX and unclear mechanics.
 
-FlareSync fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols. This platform is a way for Developers to test and undestand how cool protocols like FTSO, FDC, Randon Numbers and FAssets are!
+FlareX fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols. This platform is a way for Developers to test and undestand how cool protocols like FTSO, FDC, Randon Numbers and FAssets are!
 
 ## 🚀 Project Overview
 
-FlareSync is a comprehensive decentralized finance platform built on Flare Network, showcasing the power of Flare's enshrined data protocols. This platform integrates multiple Flare protocols to create a world-changing DeFi ecosystem that addresses real-world liquidity and cross-chain interoperability challenges.
+FlareX is a comprehensive decentralized finance platform built on Flare Network, showcasing the power of Flare's enshrined data protocols. This platform integrates multiple Flare protocols to create a world-changing DeFi ecosystem that addresses real-world liquidity and cross-chain interoperability challenges.
 
 ![image](https://github.com/user-attachments/assets/8bf971a8-152d-4295-8703-63329eadcd74)
 
