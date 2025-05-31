@@ -11,6 +11,15 @@ contract DeployScript is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         address layerZeroEndpoint = vm.envAddress("LAYER_ZERO_ENDPOINT");
         address flareRegistry = vm.envAddress("FLARE_REGISTRY_ADDRESS");
+
+        // Convert string array from env to uint256 array
+        string memory feedIndexesStr = vm.envString("FTSO_FEED_INDEXES");
+        // Remove brackets and split by comma
+        feedIndexesStr = vm.replace(feedIndexesStr, "[", "");
+        feedIndexesStr = vm.replace(feedIndexesStr, "]", "");
+        string[] memory indexStrings = vm.split(feedIndexesStr, ",");
+        
+       
         
 
         vm.startBroadcast(deployerPrivateKey);
