@@ -120,7 +120,6 @@ const RealWorldApps = () => {
               </TabsTrigger>
             </TabsList>
 
-            
             <TabsContent value="earth-data" className="mt-8">
               <ErrorBoundary fallback={<LoadingCard contentLines={4} />}>
                 <RealWorldDataRewards />
