@@ -47,3 +47,101 @@ export interface FAssetData {
   collateralRatio: number;
   apy: number;
 }
+
+
+export class FAssetsService {
+  private provider: ethers.BrowserProvider;
+  private signer: ethers.Signer | null = null;
+  private contracts: Map<string, ethers.Contract> = new Map();
+  private networkId: number | null = null;
+  private userAddress: string | null = null;
+
+  constructor(provider: ethers.BrowserProvider) {
+    this.provider = provider;
+    this.initializeService();
+  }
+
+  private async initializeService() {
+    try {
+      this.signer = await this.provider.getSigner();
+      this.userAddress = await this.signer.getAddress();
+      const network = await this.provider.getNetwork();
+      this.networkId = Number(network.chainId);
+      
+      console.log(`FAssets service initialized for user ${this.userAddress} on network ${this.networkId}`);
+      
+      this.initializeContracts();
+    } catch (error) {
+      console.error('Error initializing FAssets service:', error);
+    }
+  }
+
+
+  private initializeContracts() {
+    if (!this.networkId) return;
+    
+    Object.entries(FASSETS_CONTRACTS).forEach(([symbol, networks]) => {
+      const address = networks[this.networkId!] || networks[114]; // Fallback to Coston2
+      if (address && this.provider) {
+        const contract = new ethers.Contract(address, FASSETS_ABI, this.provider);
+        this.contracts.set(symbol, contract);
+        console.log(`Initialized ${symbol} contract at ${address}`);
+      }
+    });
+  }
+
+  async getFAssetData(symbol: string): Promise<FAssetData> {
+    try {
+      console.log(`Fetching real FAsset data for ${symbol}...`);
+      
+      const contract = this.contracts.get(symbol);
+      if (!contract || !this.userAddress) {
+        throw new Error(`Contract for ${symbol} not initialized or user not connected`);
+      }
+
+      // Fetch real data from blockchain
+      const [
+        balance,
+        totalSupply,
+        decimals,
+        name,
+        currentPrice
+      ] = await Promise.all([
+        contract.balanceOf(this.userAddress),
+        contract.totalSupply(),
+        contract.decimals(),
+        contract.name(),
+        contract.currentPrice().catch(() => BigInt(0)) // Some contracts might not have this
+      ]);
+
+      // Convert BigInt values to readable format
+      const balanceFormatted = ethers.formatUnits(balance, decimals);
+      const totalSupplyFormatted = ethers.formatUnits(totalSupply, decimals);
+      const priceFormatted = currentPrice > 0 ? parseFloat(ethers.formatUnits(currentPrice, 18)) : this.getFallbackPrice(symbol);
+
+      // For collateral ratio and APY, we'd need additional contract calls to agent vaults
+      // For now, calculate estimated values based on protocol standards
+      const collateralRatio = await this.getEstimatedCollateralRatio(symbol);
+      const apy = this.getEstimatedAPY(symbol);
+
+      const fAssetData: FAssetData = {
+        symbol,
+        name,
+        address: await contract.getAddress(),
+        balance: parseFloat(balanceFormatted).toFixed(4),
+        price: priceFormatted,
+        totalSupply: this.formatLargeNumber(totalSupplyFormatted),
+        collateralRatio,
+        apy
+      };
+
+      console.log(`Real FAsset data for ${symbol}:`, fAssetData);
+      return fAssetData;
+    } catch (error) {
+      console.error(`Error fetching real FAsset data for ${symbol}:`, error);
+      
+      // Return fallback data with real user balance if possible
+      return this.getFallbackFAssetData(symbol);
+    }
+  }
+
