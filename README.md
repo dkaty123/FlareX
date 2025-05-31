@@ -35,14 +35,24 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 
 ### 3. Secure Random Number Generator
 
-![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99)
+
+
+| ![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99) | ![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99) |
+|------------------------|------------------------|
 
 - **Provably Fair Gaming**: Dice rolling and lottery systems using Flare's secure RNG
 - **Real-time Updates**: Random numbers generated every 90 seconds by ~100 data providers
 - **Security Monitoring**: Built-in manipulation detection with security flags
 
 ### 4. FDC 
+
+![image](https://github.com/user-attachments/assets/cdb8a456-0784-49ba-a573-0e868f52326c)
+
+
+
 - **Weather APIs**: Data connection through Flare FDC
+
+
   
 ## 🌍 Real-World Problem Solving
 
