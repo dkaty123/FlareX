@@ -81,7 +81,7 @@ The FTSO integration required minimal setup while providing enterprise-grade pri
 - **EVM Compatibility**: Seamless integration with existing Ethereum tooling and libraries
 
 **3. FAssets Innovation**
-The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. T
+The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. 
 
 **4. Secure Random Numbers - A Game Changer**
 Flare's Secure Random Number Generator is revolutionary for DeFi gaming and fair selection mechanisms. The fact that it's:
