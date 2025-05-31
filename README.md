@@ -22,14 +22,14 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 ![image](https://github.com/user-attachments/assets/f9222bdf-3572-4584-a32a-e28a5edb8caa)
 ![image](https://github.com/user-attachments/assets/169ede2d-d19c-478b-a688-eae3744de65d) 
 
-
 - **Real-time Price Feeds**: Live cryptocurrency price data from FTSOv2
 - **Interactive Charts**: Dynamic price visualization with 30-second updates
 - **Multi-Asset Support**: FLR, ETH, BTC, XRP, ADA, DOT price feeds
 
 ### 2. FAssets Protocol Integration
 
-![image](https://github.com/user-attachments/assets/d604de31-6e89-4436-b12d-0262566f22b3)
+| ![image](https://github.com/user-attachments/assets/d604de31-6e89-4436-b12d-0262566f22b3) | ![image](https://github.com/user-attachments/assets/0b562806-9757-4ddb-8fca-843c6e63408c) |
+|------------------------|------------------------|
 
 - **Synthetic Asset Trading**: FXRP, FBTC, FLTC trading platform
 - **Mint & Redeem**: Full lifecycle management of synthetic assets
@@ -37,10 +37,8 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 
 ### 3. Secure Random Number Generator
 
-
-
-| ![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99) | ![image](https://github.com/user-attachments/assets/c122a3d4-aa74-4085-ba00-558697587e99) |
-|------------------------|------------------------|
+![image](https://github.com/user-attachments/assets/414b510a-493e-4546-8339-8e6e836fc24b)
+<img width="682" alt="Screenshot 2025-05-31 at 3 18 24 PM" src="https://github.com/user-attachments/assets/745cf828-c1fa-4fc2-85bc-5feb17be130f" />
 
 - **Provably Fair Gaming**: Dice rolling and lottery systems using Flare's secure RNG
 - **Real-time Updates**: Random numbers generated every 90 seconds by ~100 data providers
