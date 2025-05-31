@@ -48,19 +48,12 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 
 ![image](https://github.com/user-attachments/assets/cdb8a456-0784-49ba-a573-0e868f52326c)
 
-
-
 - **Weather APIs**: Data connection through Flare FDC
 
-
-  
 ## 🌍 Real-World Problem Solving
 
 ### Problem 1: Cross-Chain Liquidity Fragmentation
-**Solution**: Our FAssets integration brings non-smart-contract cryptocurrencies like XRP into DeFi through synthetic representations (FXRP), solving the problem of liquidity fragmentation across different blockchain ecosystems.
-
-### Problem 2: Oracle Data Accessibility
-**Solution**: LayerZero integration enables real-time price feed distribution from Flare's FTSO to any blockchain, making high-quality oracle data accessible across the entire Web3 ecosystem.
+**Solution**: FAssets integration brings non-smart-contract cryptocurrencies like XRP into DeFi through synthetic representations (FXRP), solving the problem of liquidity fragmentation across different blockchain ecosystems.
 
 ### Problem 3: Fair Randomness in DeFi
 **Solution**: Secure Random Number Generator integration provides provably fair randomness for gaming, lotteries, and selection mechanisms, eliminating the trust issues associated with centralized random number generation.
@@ -81,25 +74,18 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 ### What We Loved About Flare
 
 **1. Enshrined Data Protocols**
-Building with Flare's enshrined protocols was incredibly seamless. The FTSO integration required minimal setup while providing enterprise-grade price data. Having oracle functionality built into the network layer eliminates the complexity and costs associated with external oracle solutions.
+The FTSO integration required minimal setup while providing enterprise-grade price data. Having oracle functionality built into the network layer eliminates the complexity and costs associated with external oracle solutions.
 
 **2. Developer Experience**
 - **Excellent Documentation**: Flare's developer docs are comprehensive and well-structured
 - **EVM Compatibility**: Seamless integration with existing Ethereum tooling and libraries
-- **Fast Block Times**: 1.8-second block times provide excellent user experience
-- **Low Gas Costs**: Affordable transaction fees make the platform accessible to all users
 
 **3. FAssets Innovation**
-The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. The implementation was straightforward, and the potential use cases are limitless.
+The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. T
 
 **4. Secure Random Numbers - A Game Changer**
 Flare's Secure Random Number Generator is revolutionary for DeFi gaming and fair selection mechanisms. The fact that it's:
-- **Completely Free**: No gas costs for accessing secure randomness
-- **Provably Fair**: 1-of-N security model with ~100 data providers
-- **Built-in Security**: Automatic manipulation detection
 - **Regular Updates**: New random numbers every 90 seconds
-
-This makes it perfect for building gaming applications, lotteries, and any system requiring fair randomness without the overhead of VRF solutions on other chains.
 
 ### Technical Implementation Highlights
 
