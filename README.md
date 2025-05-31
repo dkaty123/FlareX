@@ -1,48 +1,59 @@
 
-# FlareSync - Complete DeFi Ecosystem on Flare Network
+# FlareX - Complete DeFi Ecosystem on Flare Network
 
-**URL**: https://lovable.dev/projects/899b299e-4465-490b-a642-39a31a2f04d3
+ ## 🤯 The Problem
+
+Documentation sucks. Integration sucks. Liquidity is scattered.
+
+Flare has some really powerfull tools like FTSO or Secure Random Numbers, but implementing these and reading through confusion documentation can make it super hard! Developers are left reverse-engineering outdated codebases, and users are overwhelmed by poor UX and unclear mechanics.
+
+FlareX fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols. This platform is a way for Developers to test and undestand how cool protocols like FTSO, FDC, Randon Numbers and FAssets are!
 
 ## 🚀 Project Overview
 
-FlareSync is a comprehensive decentralized finance platform built on Flare Network, showcasing the power of Flare's enshrined data protocols. Our platform integrates multiple Flare protocols to create a world-changing DeFi ecosystem that addresses real-world liquidity and cross-chain interoperability challenges.
+FlareX is a comprehensive decentralized finance platform built on Flare Network, showcasing the power of Flare's enshrined data protocols. This platform integrates multiple Flare protocols to create a world-changing DeFi ecosystem that addresses real-world liquidity and cross-chain interoperability challenges.
+
+![image](https://github.com/user-attachments/assets/8bf971a8-152d-4295-8703-63329eadcd74)
 
 ## 🌟 Features & Protocols Integrated
 
 ### 1. FTSO (Flare Time Series Oracle) Integration
+
+![image](https://github.com/user-attachments/assets/f9222bdf-3572-4584-a32a-e28a5edb8caa)
+![image](https://github.com/user-attachments/assets/169ede2d-d19c-478b-a688-eae3744de65d) 
+
 - **Real-time Price Feeds**: Live cryptocurrency price data from FTSOv2
 - **Interactive Charts**: Dynamic price visualization with 30-second updates
 - **Multi-Asset Support**: FLR, ETH, BTC, XRP, ADA, DOT price feeds
-- **Demo Mode**: Works without wallet connection for accessibility
 
 ### 2. FAssets Protocol Integration
+
+| ![image](https://github.com/user-attachments/assets/d604de31-6e89-4436-b12d-0262566f22b3) | ![image](https://github.com/user-attachments/assets/0b562806-9757-4ddb-8fca-843c6e63408c) |
+|------------------------|------------------------|
+
 - **Synthetic Asset Trading**: FXRP, FBTC, FLTC trading platform
 - **Mint & Redeem**: Full lifecycle management of synthetic assets
 - **Asset Swapping**: Instant cross-asset swaps within the ecosystem
-- **Yield Opportunities**: Staking and liquidity mining with competitive APYs
-- **Collateral Management**: Real-time collateral ratio monitoring
 
 ### 3. Secure Random Number Generator
+
+![image](https://github.com/user-attachments/assets/414b510a-493e-4546-8339-8e6e836fc24b)
+<img width="682" alt="Screenshot 2025-05-31 at 3 18 24 PM" src="https://github.com/user-attachments/assets/745cf828-c1fa-4fc2-85bc-5feb17be130f" />
+
 - **Provably Fair Gaming**: Dice rolling and lottery systems using Flare's secure RNG
 - **Real-time Updates**: Random numbers generated every 90 seconds by ~100 data providers
 - **Security Monitoring**: Built-in manipulation detection with security flags
-- **Zero Gas Cost**: Free access to secure randomness on Flare
-- **Multiple Use Cases**: Gaming, lotteries, fair selection mechanisms
-- **Auto-refresh**: Optional automatic updates with countdown timer
 
-### 4. LayerZero Cross-Chain Bridge
-- **Omnichain Interoperability**: Seamless asset transfers across multiple blockchains
-- **Price Feed Distribution**: Send FTSOv2 data to other chains
-- **Security First**: Ultra-light node architecture for maximum security
-- **Multiple Chain Support**: Ethereum, Polygon, Avalanche, BNB Chain, Arbitrum
+### 4. FDC 
+
+![image](https://github.com/user-attachments/assets/cdb8a456-0784-49ba-a573-0e868f52326c)
+
+- **Weather APIs**: Data connection through Flare FDC
 
 ## 🌍 Real-World Problem Solving
 
 ### Problem 1: Cross-Chain Liquidity Fragmentation
-**Solution**: Our FAssets integration brings non-smart-contract cryptocurrencies like XRP into DeFi through synthetic representations (FXRP), solving the problem of liquidity fragmentation across different blockchain ecosystems.
-
-### Problem 2: Oracle Data Accessibility
-**Solution**: LayerZero integration enables real-time price feed distribution from Flare's FTSO to any blockchain, making high-quality oracle data accessible across the entire Web3 ecosystem.
+**Solution**: FAssets integration brings non-smart-contract cryptocurrencies like XRP into DeFi through synthetic representations (FXRP), solving the problem of liquidity fragmentation across different blockchain ecosystems.
 
 ### Problem 3: Fair Randomness in DeFi
 **Solution**: Secure Random Number Generator integration provides provably fair randomness for gaming, lotteries, and selection mechanisms, eliminating the trust issues associated with centralized random number generation.
@@ -58,30 +69,23 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 - **Wallet**: MetaMask integration with ethers.js
 - **Charts**: Recharts for real-time data visualization
 
-## 📈 Building Experience on Flare Network
+## 📈 Dev Experience on Flare Network
 
 ### What We Loved About Flare
 
 **1. Enshrined Data Protocols**
-Building with Flare's enshrined protocols was incredibly seamless. The FTSO integration required minimal setup while providing enterprise-grade price data. Having oracle functionality built into the network layer eliminates the complexity and costs associated with external oracle solutions.
+The FTSO integration required minimal setup while providing enterprise-grade price data. Having oracle functionality built into the network layer eliminates the complexity and costs associated with external oracle solutions.
 
 **2. Developer Experience**
 - **Excellent Documentation**: Flare's developer docs are comprehensive and well-structured
 - **EVM Compatibility**: Seamless integration with existing Ethereum tooling and libraries
-- **Fast Block Times**: 1.8-second block times provide excellent user experience
-- **Low Gas Costs**: Affordable transaction fees make the platform accessible to all users
 
 **3. FAssets Innovation**
-The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. The implementation was straightforward, and the potential use cases are limitless.
+The FAssets protocol is genuinely groundbreaking. Being able to bring XRP into DeFi through a fully collateralized, decentralized mechanism opens up massive liquidity opportunities. 
 
 **4. Secure Random Numbers - A Game Changer**
 Flare's Secure Random Number Generator is revolutionary for DeFi gaming and fair selection mechanisms. The fact that it's:
-- **Completely Free**: No gas costs for accessing secure randomness
-- **Provably Fair**: 1-of-N security model with ~100 data providers
-- **Built-in Security**: Automatic manipulation detection
 - **Regular Updates**: New random numbers every 90 seconds
-
-This makes it perfect for building gaming applications, lotteries, and any system requiring fair randomness without the overhead of VRF solutions on other chains.
 
 ### Technical Implementation Highlights
 
@@ -114,11 +118,8 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 **Challenge**: Understanding the collateral mechanisms for FAssets
 **Solution**: Flare's documentation and community support helped us implement proper collateral ratio monitoring and user education features.
 
-**Challenge**: Cross-chain message formatting for LayerZero
-**Solution**: Used ethers.js AbiCoder for consistent payload encoding across different chains.
-
 **Challenge**: Implementing secure randomness for gaming
-**Solution**: Flare's RandomNumberV2 interface made it incredibly simple to integrate provably fair randomness with built-in security monitoring.
+**Solution**: Flare's RandomNumber interface made it incredibly simple to integrate provably fair randomness with built-in security monitoring.
 
 ### Future Enhancements
 
@@ -136,14 +137,8 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 - **Gaming Infrastructure**: Building blocks for on-chain games
 
 ### External Data Integration (Bonus Track Qualifier)
-- **Real-time Price Feeds**: Integration with CoinGecko API for additional market data validation
 - **Cross-chain Analytics**: Live metrics from multiple blockchain networks
 - **DeFi Protocol Data**: Integration with DeFiPulse and DeFiLlama for TVL and yield data
-
-### Cross-Chain Innovation
-- **Omnichain Price Oracles**: First implementation of FTSO price feeds across 6+ blockchains
-- **Synthetic Asset Bridging**: Revolutionary approach to bringing non-smart-contract assets into DeFi
-- **Unified Liquidity Pools**: Cross-chain liquidity aggregation for better capital efficiency
 
 ## 🏆 Competitive Advantages
 
@@ -171,7 +166,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Visit the live application: [FlareSync](https://lovable.dev/projects/899b299e-4465-490b-a642-39a31a2f04d3)
+Visit the live application: [FlareX](flareprotox.netlify.app/)
 
 ## 🤝 Contributing
 
