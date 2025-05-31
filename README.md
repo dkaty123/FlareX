@@ -166,7 +166,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Visit the live application: [FlareSync](https://lovable.dev/projects/899b299e-4465-490b-a642-39a31a2f04d3)
+Visit the live application: [FlareX](flareprotox.netlify.app/)
 
 ## 🤝 Contributing
 
