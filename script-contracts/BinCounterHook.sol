@@ -40,3 +40,45 @@ contract BinCounterHook is BinBaseHook {
             })
         );
     }
+
+
+    function beforeMint(address, PoolKey calldata key, IBinPoolManager.MintParams calldata, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4)
+    {
+        beforeMintCount[key.toId()]++;
+        return this.beforeMint.selector;
+    }
+
+    function afterMint(address, PoolKey calldata key, IBinPoolManager.MintParams calldata, BalanceDelta, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4, BalanceDelta)
+    {
+        afterMintCount[key.toId()]++;
+        return (this.afterMint.selector, BalanceDeltaLibrary.ZERO_DELTA);
+    }
+
+    function beforeSwap(address, PoolKey calldata key, bool, int128, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4, BeforeSwapDelta, uint24)
+    {
+        beforeSwapCount[key.toId()]++;
+        return (this.beforeSwap.selector, BeforeSwapDeltaLibrary.ZERO_DELTA, 0);
+    }
+
+    function afterSwap(address, PoolKey calldata key, bool, int128, BalanceDelta, bytes calldata)
+        external
+        override
+        poolManagerOnly
+        returns (bytes4, int128)
+    {
+        afterSwapCount[key.toId()]++;
+        return (this.afterSwap.selector, 0);
+    }
+}
