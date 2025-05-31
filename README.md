@@ -50,6 +50,10 @@ FlareX is a comprehensive decentralized finance platform built on Flare Network,
 
 - **Weather APIs**: Data connection through Flare FDC
 
+### 5. Blockscout (Pointing Links to Blockscout)
+
+![image](https://github.com/user-attachments/assets/2aa6c009-e7f2-4c91-a14a-3e4ef39bfad6)
+
 ## 🌍 Real-World Problem Solving
 
 ### Problem 1: Cross-Chain Liquidity Fragmentation
