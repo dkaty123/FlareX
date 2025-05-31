@@ -118,11 +118,8 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 **Challenge**: Understanding the collateral mechanisms for FAssets
 **Solution**: Flare's documentation and community support helped us implement proper collateral ratio monitoring and user education features.
 
-**Challenge**: Cross-chain message formatting for LayerZero
-**Solution**: Used ethers.js AbiCoder for consistent payload encoding across different chains.
-
 **Challenge**: Implementing secure randomness for gaming
-**Solution**: Flare's RandomNumberV2 interface made it incredibly simple to integrate provably fair randomness with built-in security monitoring.
+**Solution**: Flare's RandomNumber interface made it incredibly simple to integrate provably fair randomness with built-in security monitoring.
 
 ### Future Enhancements
 
@@ -140,14 +137,8 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 - **Gaming Infrastructure**: Building blocks for on-chain games
 
 ### External Data Integration (Bonus Track Qualifier)
-- **Real-time Price Feeds**: Integration with CoinGecko API for additional market data validation
 - **Cross-chain Analytics**: Live metrics from multiple blockchain networks
 - **DeFi Protocol Data**: Integration with DeFiPulse and DeFiLlama for TVL and yield data
-
-### Cross-Chain Innovation
-- **Omnichain Price Oracles**: First implementation of FTSO price feeds across 6+ blockchains
-- **Synthetic Asset Bridging**: Revolutionary approach to bringing non-smart-contract assets into DeFi
-- **Unified Liquidity Pools**: Cross-chain liquidity aggregation for better capital efficiency
 
 ## 🏆 Competitive Advantages
 
