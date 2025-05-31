@@ -69,7 +69,7 @@ FlareSync is a comprehensive decentralized finance platform built on Flare Netwo
 - **Wallet**: MetaMask integration with ethers.js
 - **Charts**: Recharts for real-time data visualization
 
-## 📈 Building Experience on Flare Network
+## 📈 Dev Experience on Flare Network
 
 ### What We Loved About Flare
 
