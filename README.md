@@ -65,7 +65,7 @@ FlareX is a comprehensive decentralized finance platform built on Flare Network,
 
 - **Frontend**: React, TypeScript, Tailwind CSS, shadcn/ui
 - **Blockchain**: Flare Network, Ethereum ecosystem
-- **Protocols**: FTSO, FAssets, Secure Random Numbers, LayerZero
+- **Protocols**: FTSO, FAssets, Secure Random Numbers
 - **Wallet**: MetaMask integration with ethers.js
 - **Charts**: Recharts for real-time data visualization
 
@@ -142,7 +142,7 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 
 ## 🏆 Competitive Advantages
 
-1. **Multi-Protocol Integration**: Only platform combining FTSO, FAssets, Secure RNG, and LayerZero
+1. **Multi-Protocol Integration**: Only platform combining FTSO, FAssets, Secure RNG
 2. **Real-World Utility**: Addresses actual liquidity, interoperability, and fairness problems
 3. **User Experience**: Intuitive interface with comprehensive trading and gaming tools
 4. **Scalability**: Built for enterprise-level volume and multi-chain deployment
@@ -152,7 +152,7 @@ const diceRoll = (parseInt(randomNumber.slice(-6), 16) % 6) + 1;
 
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/dkaty123/FlareX/tree/master
 
 # Navigate to project directory
 cd flare-defi-hub
