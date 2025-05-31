@@ -1,7 +1,12 @@
 
 # FlareSync - Complete DeFi Ecosystem on Flare Network
 
-**URL**: https://lovable.dev/projects/899b299e-4465-490b-a642-39a31a2f04d3
+ ## 🤯 The Problem
+DeFi is powerful—but also painful.
+From poor documentation and inconsistent standards to fragmented liquidity and complex protocol interactions, navigating the decentralized finance space often feels like stitching together a dozen broken APIs. Developers are left reverse-engineering outdated codebases, and users are overwhelmed by poor UX and unclear mechanics.
+
+Documentation sucks. Integration sucks. Liquidity is scattered.
+FlareSync fixes all of that—with simplicity, clarity, and power, all built on the Flare Network’s enshrined data protocols.
 
 ## 🚀 Project Overview
 
